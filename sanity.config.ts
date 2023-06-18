@@ -7,7 +7,7 @@ import {schemaTypes} from './schemas'
 export default defineConfig({
   name: 'default',
   title: 'studio',
-
+  basePath: '/studio',
   projectId: 'qtut2ng4',
   dataset: 'production',
 
