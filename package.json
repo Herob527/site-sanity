@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "main": "package.json",
+  "homepage": "https://herob527.github.io/site-sanity/",
   "license": "UNLICENSED",
   "scripts": {
     "dev": "sanity dev",
