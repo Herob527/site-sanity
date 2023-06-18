@@ -40,10 +40,10 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
-        with:
-          cache: 'pnpm'
       - name: Install Node.js dependencies
         run: npm install -g pnpm && pnpm install
+        with:
+          cache: 'pnpm'
       - name: Build with Sanity
         run: pnpm run build
       - name: List content of build
