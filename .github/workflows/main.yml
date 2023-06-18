@@ -44,10 +44,12 @@ jobs:
         run: npm install -g pnpm && pnpm install
       - name: Build with Sanity
         run: pnpm run build
+      - name: List content of build
+        run: ls ./dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./dist/**/*.*
+          path: ./dist
 
   # Deployment job
   deploy:
