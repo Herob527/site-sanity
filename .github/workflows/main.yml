@@ -52,8 +52,8 @@ jobs:
         run: npm install -g pnpm && pnpm install
       - name: Build with Sanity
         run: pnpm run build
-      - name: Print content of index.html
-        run: cat dist/index.html
+      - name: Replace /static/ with /site-sanity/static content of index.html
+        run: sed -i 's//static///site-sanity/static//g' dist/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
