@@ -9,6 +9,7 @@ export default defineConfig({
   title: 'studio',
   projectId: 'qtut2ng4',
   dataset: 'production',
+  basePath: '/site-sanity/',
   plugins: [
     deskTool(),
     visionTool(),
