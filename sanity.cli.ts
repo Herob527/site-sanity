@@ -5,7 +5,4 @@ export default defineCliConfig({
     projectId: 'qtut2ng4',
     dataset: 'production',
   },
-  vite: {
-    base: '/site-sanity',
-  },
 })
