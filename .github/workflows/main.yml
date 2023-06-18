@@ -52,6 +52,8 @@ jobs:
         run: npm install -g pnpm && pnpm install
       - name: Build with Sanity
         run: pnpm run build
+      - name: Print content of index.html
+        run: cat index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
