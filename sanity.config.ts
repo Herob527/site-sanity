@@ -14,7 +14,6 @@ export default defineConfig({
     visionTool(),
     //googleMapsInput(),
   ],
-
   schema: {
     types: schemaTypes,
   },
