@@ -53,7 +53,7 @@ jobs:
       - name: Build with Sanity
         run: pnpm run build
       - name: Replace /static/ with /site-sanity/static content of index.html
-        run: sed -i 's//static///site-sanity/static//g' dist/index.html
+        run: sed -i 's@/static/@/site-sanity/static/@g' index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
