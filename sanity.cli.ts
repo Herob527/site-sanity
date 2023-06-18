@@ -3,6 +3,9 @@ import {defineCliConfig} from 'sanity/cli'
 export default defineCliConfig({
   api: {
     projectId: 'qtut2ng4',
-    dataset: 'production'
-  }
+    dataset: 'production',
+  },
+  vite: {
+    base: '/site-sanity/',
+  },
 })
