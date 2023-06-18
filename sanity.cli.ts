@@ -6,6 +6,6 @@ export default defineCliConfig({
     dataset: 'production',
   },
   vite: {
-    base: '/site-sanity/',
+    base: process.env.NODE_ENV === 'production' ? '/site-sanity/' : '/',
   },
 })
