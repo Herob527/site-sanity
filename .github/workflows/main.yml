@@ -53,7 +53,7 @@ jobs:
       - name: Build with Sanity
         run: pnpm run build
       - name: Print content of index.html
-        run: cat index.html
+        run: cat dist/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
