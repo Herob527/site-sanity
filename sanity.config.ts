@@ -7,10 +7,9 @@ import {schemaTypes} from './schemas'
 export default defineConfig({
   name: 'default',
   title: 'studio',
-  basePath: '/studio',
+  basePath: './',
   projectId: 'qtut2ng4',
   dataset: 'production',
-
   plugins: [
     deskTool(),
     visionTool(),
