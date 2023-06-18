@@ -43,7 +43,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       - name: Install Node.js dependencies
-        run: npm install pnpm && pnpm install
+        run: npm install -g pnpm && pnpm install
       - name: Build with Sanity
         run: pnpm run build
       - name: Upload artifact
