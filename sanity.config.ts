@@ -7,7 +7,6 @@ import {schemaTypes} from './schemas'
 export default defineConfig({
   name: 'default',
   title: 'studio',
-  basePath: '/site-sanity/',
   projectId: 'qtut2ng4',
   dataset: 'production',
   plugins: [
